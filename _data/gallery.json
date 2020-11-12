@@ -1,0 +1,12 @@
+{
+    "photos": [
+        {
+            "url": "photo",
+            "description": "Photo 1"
+        },
+        {
+            "url": "photo",
+            "description": "Photo 2"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "photo": "photo",
+            "name": "Товар №1",
+            "description": "Описание товара №1",
+            "price": "21 000"
+        },
+        {
+            "photo": "photo",
+            "name": "Товар №2",
+            "description": "Описание товара №2",
+            "price": "25 000"
+        }
+    ]
+}
