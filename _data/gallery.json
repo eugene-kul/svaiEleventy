@@ -1,12 +1,28 @@
 {
     "photos": [
         {
-            "url": "photo",
-            "description": "Photo 1"
+            "url": "images/gallery/original/01.jpg",
+            "description": "Фундамент под навес на винтовых сваях."
         },
         {
-            "url": "photo",
-            "description": "Photo 2"
-        }
+            "url": "images/gallery/original/02.jpg",
+            "description": "Фундамент для забора"
+        },
+        {
+            "url": "images/gallery/original/03.jpg",
+            "description": "Замена фундамента"
+		  },
+		  {
+			"url": "images/gallery/original/04.jpg",
+			"description": "Фундамент под навес на винтовых сваях."
+	  },
+	  {
+			"url": "images/gallery/original/05.jpg",
+			"description": "Фундамент для забора"
+	  },
+	  {
+			"url": "images/gallery/original/06.jpg",
+			"description": "Замена фундамента"
+	  }
     ]
 }

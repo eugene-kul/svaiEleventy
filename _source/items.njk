@@ -1,0 +1,28 @@
+{% macro item(items,pos1,pos2,v) %}
+	{% set i = 0 %}
+	{% for item in items.items %}
+		{% set i = i+1 %}
+		{% if i >= pos1 and i <= pos2 and v == 'v1' %}
+			<a href="{{item.name}}" class="base-block_item product-item" title="{{item.description}}">
+				<img src="{{item.photo}}" class="product-item_image" width="290" height="190" alt="{{item.description}}">
+				<span class="product-item_text">{{item.description}}</span>
+				{% if item.price != '' %}
+					<span class="product-item_price">от {{item.price}} руб.</span>
+				{% endif %}
+				<span class="product-item_btn btn btn-type3">Подробнее</span>
+			</a>
+		{% elif i >= pos1 and i <= pos2 and v == 'v2' %}
+			<a href="{{item.name}}" title="{{item.description}}" class="piles-block_item piles-item">
+				<span class="piles-item_title">{{item.description}}</span>
+				<span class="piles-item_image">
+					<img src="{{item.photo}}" alt="">
+					<span class="piles-item_price">
+						<span class="text">Цена: </span>
+						<span class="price">{{item.price}} &#8381;/шт</span>
+					</span>
+				</span>
+				<span class="piles-item_btn btn btn-type3">Подробнее</span>
+			</a>
+		{% endif %}
+	{% endfor %}
+{% endmacro %}

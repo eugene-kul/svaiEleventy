@@ -1,0 +1,15 @@
+{% macro item(gallery, quantity) %}
+	{% set i = 0 %}
+	{% if quantity == 0 %}
+		{% set quantity = 9999999 %}
+	{% endif %}
+	{% for item in gallery.photos %}
+		{% if i < quantity %}
+			<a href="{{item.url}}" title="{{item.description}}" class="photo-block_item item-photo">
+				<img class="item-photo_image" src="{{item.url}}" width="265" height="190" title="{{item.description}}" alt="{{item.description}}">
+				<span class="item-photo_title">{{item.description}}</span>
+			</a>
+			{% set i = i+1 %}
+		{% endif %}
+	{% endfor %}
+{% endmacro %}
