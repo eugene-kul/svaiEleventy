@@ -677,6 +677,31 @@ mark {
 	}
 }
 
+.item-slide {
+	position: relative;
+	&_image {
+		object-fit: cover;
+		object-position: 50% 50%;
+		height: 100%;
+		width: 100%;
+		max-height: 300px;
+	}
+	&_text {
+		text-align: center;
+		display: inline-block;
+		border-radius: 5px;
+		padding: 5px 10px;
+		margin: 10px;
+		background-color: $colorDefOpac;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		color: #fff;
+		font-weight: 700;
+	}
+}
+
+
 .item-project {
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);

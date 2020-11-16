@@ -11,6 +11,7 @@ divSideBarMain: main-page-sidebar
 ---
 	{% import "./_source/photo.njk" as photo %}
 	{% import "./_source/items.njk" as item %}
+	{% import "./_source/slides.njk" as slide %}
 	<section class="main-block">
 		<div class="main-block_body container">
 			<div class="main-block_title">
@@ -135,6 +136,15 @@ divSideBarMain: main-page-sidebar
 					</span>
 				</span>
 			</a>
+		</div>
+		<div class="gallery slider">
+			<div class="slider__wrapper">
+				<div class="slider__items">
+					{{slide.item(slides,0)}}
+				</div>
+			</div>
+			<a class="slider__control slider__control_prev" href="#" role="button"></a>
+			<a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
 		</div>
 		<a href="gallereya/" title="Галлерея" class="project-block_btn btn btn-type4">Посмотреть все проекты </a>
 	</section>

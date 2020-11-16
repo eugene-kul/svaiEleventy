@@ -23,7 +23,5 @@
     "venyooId": "0000000000000000",
     "callibri": "yes",
     "envybox": "00000000000000000000000000000000",
-	 "domain": "http://localhost:8080",
-	 "phoneViber": "9991112233",
-	 "phoneWhatsUp": "9991112233"
+	 "domain": "http://localhost:8080"
 }

@@ -1,0 +1,13 @@
+{% macro item(slides, quantity) %}
+	{% set i = 0 %}
+	{% if quantity == 0 %}{% set quantity = 9999999 %}{% endif %}
+	{% for item in slides.slides %}
+		{% if i < quantity %}
+			<a href="{{item.image}}" title="{{item.text}}" class="slide-block_item item-slide slider__item">
+				<img class="item-slide_image" src="{{item.image}}" width="265" height="190" title="{{item.text}}" alt="{{item.text}}">
+				<span class="item-slide_text">{{item.text}}</span>
+			</a>
+			{% set i = i+1 %}
+		{% endif %}
+	{% endfor %}
+{% endmacro %}

@@ -1,12 +1,28 @@
 {
     "slides": [
         {
-            "image": "photo",
+            "image": "../images/slides/1.jpg",
             "text": "Описание к слайду №1"
         },
         {
-            "image": "photo",
+            "image": "../images/slides/2.jpg",
             "text": "Описание к слайду №2"
+        },
+        {
+            "image": "../images/slides/3.jpg",
+            "text": "Описание к слайду №3"
+        },
+        {
+            "image": "../images/slides/4.jpg",
+            "text": "Описание к слайду №4"
+        },
+        {
+            "image": "../images/slides/5.jpg",
+            "text": "Описание к слайду №5"
+        },
+        {
+            "image": "../images/slides/6.jpg",
+            "text": "Описание к слайду №6"
         }
     ]
 }
