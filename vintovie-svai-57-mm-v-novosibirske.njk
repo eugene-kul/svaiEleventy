@@ -9,6 +9,8 @@ images: ../images
 sidePage: 1
 wrapperBody: wrapper_body container
 ---
+{% import "./_source/reviews.njk" as review %}
+{% import "./_source/items.njk" as item %}
 <section class="wrapper_column wrapper_column--main">
 	<ul class="breadcrumb">
 		<li><a href="../">Винтовые сваи {{common.city}}</a></li>
@@ -447,50 +449,7 @@ wrapperBody: wrapper_body container
 			<h2>Услуги монтажа винтовых свай в городе {{common.city}}</h2>
 		</div>
 		<div class="base-block_list">
-			<div class="base-block_item product-item">
-				<a href="../montazh-vintovih-svay-v-novosibirske" title="Монтаж винтовых свай">
-					<picture class="product-item_image">
-						<source srcset="{{images}}/content/webp/@2x/01.webp 2x, {{images}}/content/webp/01.webp 1x" type="image/webp">
-						<img src="{{images}}/content/jpg/01.jpg" srcset="{{images}}/content/jpg/@2x/01.jpg 2x" width="290" height="190"
-							alt="Монтаж фундамента">
-					</picture>
-					<span class="product-item_text">Монтаж винтовых свай</span>
-					<span class="product-item_btn btn btn-type3">Подробнее<span class="arrow-svg"><svg viewBox="0 -22 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0" /></svg></span></span>
-				</a>
-			</div>
-			<div class="base-block_item product-item">
-				<a href="../zamena-fundamenta-v-novosibirske" title="Замена фундамента">
-					<picture class="product-item_image">
-						<source srcset="{{images}}/content/webp/@2x/04.webp 2x, {{images}}/content/webp/04.webp 1x" type="image/webp">
-						<img src="{{images}}/content/jpg/04.jpg" srcset="{{images}}/content/jpg/@2x/04.jpg 2x" width="290" height="190"
-							alt="Замена фундамента на свайно-винтовой">
-					</picture>
-					<span class="product-item_text">Замена фундамента</span>
-					<span class="product-item_btn btn btn-type3">Подробнее<span class="arrow-svg"><svg viewBox="0 -22 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0" /></svg></span></span>
-				</a>
-			</div>
-			<div class="base-block_item product-item">
-				<a href="../arenda-yamobura-v-novosibirske" title="Аренда ямобура">
-					<picture class="product-item_image">
-						<source srcset="{{images}}/content/webp/@2x/03.webp 2x, {{images}}/content/webp/03.webp 1x" type="image/webp">
-						<img src="{{images}}/content/jpg/03.jpg" srcset="{{images}}/content/jpg/@2x/03.jpg 2x" width="290" height="190"
-							alt="Аренда ямобура">
-					</picture>
-					<span class="product-item_text">Аренда ямобура</span>
-					<span class="product-item_btn btn btn-type3">Подробнее<span class="arrow-svg"><svg viewBox="0 -22 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0" /></svg></span></span>
-				</a>
-			</div>
-			<div class="base-block_item product-item">
-				<a href="../podnyatie-doma-v-novosibirske" title="Поднятие дома">
-					<picture class="product-item_image">
-						<source srcset="{{images}}/content/webp/@2x/02.webp 2x, {{images}}/content/webp/02.webp 1x" type="image/webp">
-						<img src="{{images}}/content/jpg/02.jpg" srcset="{{images}}/content/jpg/@2x/02.jpg 2x" width="290" height="190"
-							alt="Поднятие дома">
-					</picture>
-					<span class="product-item_text">Поднятие дома</span>
-					<span class="product-item_btn btn btn-type3">Подробнее<span class="arrow-svg"><svg viewBox="0 -22 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0" /></svg></span></span>
-				</a>
-			</div>
+			{{item.item(items,17,20,'v1')}}
 		</div>
 	</section>
 	<section class="similar">
@@ -522,46 +481,7 @@ wrapperBody: wrapper_body container
 			<span class="text">Реальные отзывы про монтаж винтовых свай. Отзывы об установке винтовых свай и свайных фундаментах и выполненной работе в городе {{common.city}}</span>
 		</div>
 		<div class="reviews-block_body">
-			<div class="reviews-block_item">
-				<div class="reviews-block_row">
-					<img class="reviews-block_avatar" src="{{images}}/avatar/m07.jpg" width="80" height="80" alt="Фотография пользователя">
-					<div class="reviews-block_description">
-						<div class="reviews-block_name">Сергей</div>
-						<div class="reviews-block_date">28 июня 2020 г.</div>
-					</div>
-				</div>
-				<div class="reviews-block_item-text">Спасибо компании «Свай – фундамент» за качественно проделанную работу. Установили нам качественный винтовой фундамент под дом и под баню. Всего несколько дней прошло от подписания договора до монтажа. Мы бы, наверно, месяц корячились, чтобы бетонный фундамент залить, а потом ещё столько же ждать, пока фундамент затвердеет и можно будет к строительству основному приступать. Вы нам сэкономили время и деньги. Ещё раз спасибо и всех благ!</div>
-			</div>
-			<div class="reviews-block_item">
-				<div class="reviews-block_row">
-					<img class="reviews-block_avatar" src="{{images}}/avatar/m04.jpg" width="80" height="80" alt="Фотография пользователя">
-					<div class="reviews-block_description">
-						<div class="reviews-block_name">Николай</div>
-						<div class="reviews-block_date">13 августа 2020 г.</div>
-					</div>
-				</div>
-				<div class="reviews-block_item-text">Хочу поделиться отзывом о строительстве на свайном фундаменте. Изначально, конечно, хотел делать монолит, но строители отговорили. Местность болотистая, и любые движения грунта могли бы привести к трещинам в фундаменте. А это потом лишние расходы. Остановился на установке свай. Обратился в компанию Свай-фундамент. Менеджер рассчитал точное количество свай. Вся работа заняла пару дней.  Качеством работы остался доволен. Огромное спасибо.</div>
-			</div>
-			<div class="reviews-block_item">
-				<div class="reviews-block_row">
-					<img class="reviews-block_avatar" src="{{images}}/avatar/m08.jpg" width="80" height="80" alt="Фотография пользователя">
-					<div class="reviews-block_description">
-						<div class="reviews-block_name">Виктор</div>
-						<div class="reviews-block_date">11 июня 2020 г.</div>
-					</div>
-				</div>
-				<div class="reviews-block_item-text">Вкрутили 35 свай под дом, под баню и хозблок. Обратился в компанию «Свай – фундамент» потому что: 1. Компания сама является изготовителем свай; 2. Нет скрытых условий; 3.Доступные цены; 4. Предоставление гарантии на сваи и работу. Пока что всем доволен. Спасибо.</div>
-			</div>
-			<div class="reviews-block_item">
-				<div class="reviews-block_row">
-					<img class="reviews-block_avatar" src="{{images}}/avatar/m14.jpg" width="80" height="80" alt="Фотография пользователя">
-					<div class="reviews-block_description">
-						<div class="reviews-block_name">Андрей</div>
-						<div class="reviews-block_date">30 мая 2020 г.</div>
-					</div>
-				</div>
-				<div class="reviews-block_item-text">В компании «Свай – фундамент» меня удивило то, как тщательно проводились все расчёты, с учётом площади строений, особенности грунта. Признаюсь, я не очень доверял технологии свайного фундамента, но всё получилось отлично. Сваи делали поздней осенью. Строить дом начали весной. После окончания строительства ни одна свая не дала усадки. Спасибо за качественную работу!</div>
-			</div>
+			{{review.item(reviews,0)}}
 		</div>
 		<div class="reviews-block_btn"><a href="../otzivi/" class="btn btn-type1">Посмотреть другие отзывы</a></div>
 	</section>

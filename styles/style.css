@@ -8723,6 +8723,15 @@ mark.red {
   }
 }
 
+.reviews-block_image-block {
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
+
+.reviews-block_item-image {
+  width: 100px;
+}
+
 .reviews-block_btn {
   text-align: center;
   margin: 30px 0 0 0;

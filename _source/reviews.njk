@@ -1,0 +1,26 @@
+{% macro item(reviews, quantity) %}
+	{% set i = 0 %}
+	{% if quantity == 0 %}{% set quantity = 9999999 %}{% endif %}
+	{% for item in reviews.reviews %}
+		{% if i < quantity %}
+			<div class="reviews-block_item">
+				<div class="reviews-block_row">
+					<img class="reviews-block_avatar" src="{{item.photo}}" width="80" height="80" alt="Фотография пользователя">
+					<div class="reviews-block_description">
+						<div class="reviews-block_name">{{item.name}}</div>
+						<div class="reviews-block_date">{{item.date}}</div>
+					</div>
+				</div>
+				<div class="reviews-block_item-text">{{item.text}}</div>
+				{% if item.image != '' %}
+					<div class="reviews-block_image-block gallery">
+						<a href="{{item.image}}">
+							<img class="reviews-block_item-image" src="{{item.image}}" alt="Фотография выполненой работы">
+						</a>
+					</div>
+				{% endif %}
+			</div>
+			{% set i = i+1 %}
+		{% endif %}
+	{% endfor %}
+{% endmacro %}

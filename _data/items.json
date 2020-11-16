@@ -1,121 +1,121 @@
 {
 	 "items": [
 		{
-			"photo": "images/content/jpg/011.jpg",
+			"photo": "../images/content/jpg/011.jpg",
 			"name": "vintovoi-svainyi-fundament-pod-dom-v-novosibirske",
 			"description": "Для дома",
 			"price": "20 000"
 		},
 		{
-			"photo": "images/content/jpg/012.jpg",
+			"photo": "../images/content/jpg/012.jpg",
 			"name": "banya-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для бани",
 			"price": "16 000"
 		},
 		{
-			"photo": "images/content/jpg/013.jpg",
+			"photo": "../images/content/jpg/013.jpg",
 			"name": "vintovye-svai-dlya-zabora-v-novosibirske",
 			"description": "Для забора",
 			"price": "13 500"
 		},
 		{
-			"photo": "images/content/jpg/014.jpg",
+			"photo": "../images/content/jpg/014.jpg",
 			"name": "vorota-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для ворот",
 			"price": "12 140"
 		},
 		{
-			"photo": "images/content/jpg/022.jpg",
+			"photo": "../images/content/jpg/022.jpg",
 			"name": "terrasa-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для террасы",
 			"price": "12 140"
 		},
 		{
-			"photo": "images/content/jpg/016.jpg",
+			"photo": "../images/content/jpg/016.jpg",
 			"name": "vintovoi-svainyi-fundament-v-novosibirske",
 			"description": "Типовой фундамент",
 			"price": "17 600"
 		},
 		{
-			"photo": "images/content/jpg/017.jpg",
+			"photo": "../images/content/jpg/017.jpg",
 			"name": "karkasnyi-dom-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для каркасного дома",
 			"price": "18 000"
 		},
 		{
-			"photo": "images/content/jpg/019.jpg",
+			"photo": "../images/content/jpg/019.jpg",
 			"name": "garazh-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для гаража",
 			"price": "17 600"
 		},
 		{
-			"photo": "images/content/jpg/020.jpg",
+			"photo": "../images/content/jpg/020.jpg",
 			"name": "vintovye-svai-dlya-teplitsi-v-novosibirske",
 			"description": "Для теплицы",
 			"price": "9 000"
 		},
 		{
-			"photo": "images/content/jpg/015.jpg",
+			"photo": "../images/content/jpg/015.jpg",
 			"name": "pirs-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для пирса",
 			"price": "12 000"
 		},
 		{
-			"photo": "images/content/jpg/021.jpg",
+			"photo": "../images/content/jpg/021.jpg",
 			"name": "besedka-na-vintovyh-svayah-v-novosibirsk",
 			"description": "Для беседки",
 			"price": "11 000"
 		},
 		{
-			"photo": "images/content/jpg/018.jpg",
+			"photo": "../images/content/jpg/018.jpg",
 			"name": "naves-na-vintovyh-svayah-v-novosibirske",
 			"description": "Для навеса",
 			"price": "13 000"
 		},
 		{
-			"photo": "images/piles/png/s57.png",
+			"photo": "../images/piles/png/s57.png",
 			"name": "vintovie-svai-57-mm-v-novosibirske",
 			"description": "Винтовая свая СВС-57",
 			"price": "1 070"
 		},
 		{
-			"photo": "images/piles/png/s76.png",
+			"photo": "../images/piles/png/s76.png",
 			"name": "vintovie-svai-76-mm-v-novosibirske",
 			"description": "Винтовая свая СВС-76",
 			"price": "1 270"
 		},
 		{
-			"photo": "images/piles/png/s89.png",
+			"photo": "../images/piles/png/s89.png",
 			"name": "vintovie-svai-89-mm-v-novosibirske",
 			"description": "Винтовая свая СВС-89",
 			"price": "1 560"
 		},
 		{
-			"photo": "images/piles/png/s108.png",
+			"photo": "../images/piles/png/s108.png",
 			"name": "vintovie-svai-108-mm-v-novosibirske",
 			"description": "Винтовая свая СВС-108",
 			"price": "1 860"
 		},
 		{
-			"photo": "images/content/jpg/01.jpg",
+			"photo": "../images/content/jpg/01.jpg",
 			"name": "montazh-vintovih-svay-v-novosibirske",
 			"description": "Монтаж винтовых свай",
 			"price": ""
 		},
 		{
-			"photo": "images/content/jpg/04.jpg",
+			"photo": "../images/content/jpg/04.jpg",
 			"name": "zamena-fundamenta-v-novosibirske",
 			"description": "Замена фундамента",
 			"price": ""
 		},
 		{
-			"photo": "images/content/jpg/03.jpg",
+			"photo": "../images/content/jpg/03.jpg",
 			"name": "arenda-yamobura-v-novosibirske",
 			"description": "Аренда ямобура",
 			"price": ""
 		},
 		{
-			"photo": "images/content/jpg/02.jpg",
+			"photo": "../images/content/jpg/02.jpg",
 			"name": "podnyatie-doma-v-novosibirske",
 			"description": "Поднятие дома",
 			"price": ""
